@@ -1,0 +1,349 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Condensed:wght@200;400&family=Inter&family=Lilita+One&family=Lobster&family=Orbitron:wght@500&family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+p,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  color: #000000;
+}
+
+a,
+li {
+  background-color: transparent;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  user-select: none;
+}
+
+/*Nav bar*/
+.menu_nav {
+  background: #161616;
+  filter: drop-shadow(0em 2px 7px #191b1d);
+  height: 10vh;
+  width: 100%;
+}
+
+.jeff_logo {
+  position: absolute;
+  top: 1.2em;
+  left: 1em;
+  width: 150px;
+}
+
+.page-logo {
+  width: 200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 15px;
+  display: flex;
+}
+
+.alura-logo {
+  width: 40px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+/*Abaixo do navbar*/
+
+.jPanel {
+  background-image: url(https://raw.githubusercontent.com/JefersonT4v4res/ImersaoDev_Alura/main/_imgs/windowsBg.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.jFrame {
+  max-width: 95vw;
+  max-height: 90vh;
+  background-color: #000000;
+  border: 0.12em solid #808080;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.barra-ferramentas {
+  width: 100%;
+  height: 3rem;
+  background-color: #808080;
+  display: flex;
+}
+
+.nome-aplicacao {
+  width: 30em;
+  height: 100%;
+  padding-left: 1em;
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+}
+
+#icone-aplicacao {
+  border-radius: 50%;
+  margin-right: 0.5em;
+}
+#nome {
+  font-size: 1em;
+  letter-spacing: 0.3em;
+  font-family: "IBM Plex Sans Condensed", sans-serif;
+}
+
+.container {
+  margin-left: auto;
+  width: 20em;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+}
+
+.barra-ferramenta_options {
+  width: 3.5em;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+div#encerrar:hover {
+  background-color: #e71313;
+}
+
+div#minimizar:hover,
+#maximizar:hover {
+  background-color: #727171d3;
+}
+
+.container-game {
+    box-sizing: border-box;
+    width: 95vw;
+    height: 34rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.section-game {
+  background-image: url(https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/bgInicial.jpg?raw=true);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 50%;
+  height: 30rem;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+
+
+.vidas {
+    position: relative;
+    bottom: 6rem;
+    width: 25rem;
+}
+
+.iconLife {
+    margin-right: 10px;
+    filter: drop-shadow(7px 4px 1px rgba(0, 0, 0, 0.5));
+    animation: wave 1.5s ease-in-out infinite; /* Duração da animação */
+}
+
+/* Animação de onda (subir e descer) */
+@keyframes wave {
+    0%, 100% {
+        transform: translateY(0); /* Posição inicial e final */
+    }
+    50% {
+        transform: translateY(-12px); /* Subir */
+    }
+}
+
+/* Aplicando diferentes atrasos para criar o efeito de onda */
+.iconLife:nth-child(1) {
+    animation-delay: 0s;
+}
+.iconLife:nth-child(2) {
+    animation-delay: 0.1s;
+}
+.iconLife:nth-child(3) {
+    animation-delay: 0.2s;
+}
+.iconLife:nth-child(4) {
+    animation-delay: 0.3s;
+}
+.iconLife:nth-child(5) {
+    animation-delay: 0.4s;
+}
+.iconLife:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+#versus-arena {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#hero {
+  width: 5rem;
+}
+#inimigo {
+  width: 14rem;
+  position: relative;
+  top: 1rem;
+  left: 5rem;
+}
+
+#ground {
+  width: 100%;
+  height: 3em;
+}
+
+.section-chat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 0.2em solid #ffffff;
+    box-sizing: border-box;
+    width: 49%;
+    height: 30rem;
+    padding: 5px;
+}
+
+.messages-chat {
+    width: 100%;
+    height: 4rem;
+}
+
+.message {
+    margin-bottom: 10em;
+    color: #fff;
+    font-size: 1em;
+}
+
+#word-field {
+    color: #fff;
+    font-size: 3em;
+    text-align: center;
+}
+
+.keyboard {
+    background-color: #222;
+    padding: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
+
+.key-row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 5px;
+}
+
+.key {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 5px;
+    width: 50px;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.key:hover {
+    background-color: #555;
+}
+
+/* textarea {
+  background-color: #14131b;
+  border: 0;
+  width: 100%;
+  height: 100px;
+  resize: none;
+} */
+
+
+
+
+
+/* .text-chat {
+  background-color: #fcfcfc;
+  width: 100%;
+  height: 20%;
+  display: flex;
+  align-items: center;
+}
+
+#text-send {
+  background-color: transparent;
+  border: 0;
+  width: 20%;
+  height: 100%;
+  background-color: #b32e29;
+  cursor: pointer;
+}
+
+input#inp_text {
+  border-left: 0;
+  border-top: 0;
+  border-bottom: 0;
+  border-right: 1px solid #000000;
+  text-align: center;
+  font-size: 1.5em;
+  width: 80%;
+  height: 100%;
+  color: #000000;
+} */
+
+/* input:focus {
+  outline: none;
+} */
+
+/* input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type="number"] {
+  -moz-appearance: textfield;
+  appearance: textfield;
+} */
+
+.comecar {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-left: 65%;
+  margin-bottom: 1em;
+}
+
+#btn_comecar {
+  width: 10em;
+  height: 3em;
+  background: #ffffff;
+  font-size: 1em;
+  font-weight: 600;
+}
