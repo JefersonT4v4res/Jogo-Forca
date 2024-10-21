@@ -27,36 +27,6 @@ body {
   user-select: none;
 }
 
-/*Nav bar*/
-.menu_nav {
-  background: #161616;
-  filter: drop-shadow(0em 2px 7px #191b1d);
-  height: 10vh;
-  width: 100%;
-}
-
-.jeff_logo {
-  position: absolute;
-  top: 1.2em;
-  left: 1em;
-  width: 150px;
-}
-
-.page-logo {
-  width: 200px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 15px;
-  display: flex;
-}
-
-.alura-logo {
-  width: 40px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
-}
-
 /*Abaixo do navbar*/
 
 .jPanel {
@@ -71,7 +41,7 @@ body {
 }
 
 .jFrame {
-  max-width: 95vw;
+  min-width: 95vw;
   max-height: 90vh;
   background-color: #000000;
   border: 0.12em solid #808080;
@@ -89,9 +59,9 @@ body {
 }
 
 .nome-aplicacao {
-  width: 30em;
+  width: 30rem;
   height: 100%;
-  padding-left: 1em;
+  padding-left: 1rem;
   margin-right: auto;
   display: flex;
   align-items: center;
@@ -99,24 +69,24 @@ body {
 
 #icone-aplicacao {
   border-radius: 50%;
-  margin-right: 0.5em;
+  margin-right: 0.5rem;
 }
 #nome {
-  font-size: 1em;
-  letter-spacing: 0.3em;
+  font-size: 1rem;
+  letter-spacing: 0.3rem;
   font-family: "IBM Plex Sans Condensed", sans-serif;
 }
 
 .container {
   margin-left: auto;
-  width: 20em;
+  width: 20rem;
   display: flex;
   align-items: center;
   justify-content: end;
 }
 
 .barra-ferramenta_options {
-  width: 3.5em;
+  width: 3.5rem;
   height: 100%;
   display: flex;
   align-items: center;
@@ -134,7 +104,7 @@ div#minimizar:hover,
 
 .container-game {
     box-sizing: border-box;
-    width: 95vw;
+    min-width: 95vw;
     height: 34rem;
     padding: 1rem;
     display: flex;
@@ -218,14 +188,14 @@ div#minimizar:hover,
 
 #ground {
   width: 100%;
-  height: 3em;
+  height: 3rem;
 }
 
 .section-chat {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    border: 0.2em solid #ffffff;
+    border: 0.2rem solid #ffffff;
     box-sizing: border-box;
     width: 49%;
     height: 30rem;
@@ -238,14 +208,14 @@ div#minimizar:hover,
 }
 
 .message {
-    margin-bottom: 10em;
+    margin-bottom: 10rem;
     color: #fff;
-    font-size: 1em;
+    font-size: 1rem;
 }
 
 #word-field {
     color: #fff;
-    font-size: 3em;
+    font-size: 3rem;
     text-align: center;
 }
 
