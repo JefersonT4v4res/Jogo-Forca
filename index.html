@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Imersão Dev Alura - Aula 02 </title>
+  <title> Jogo da Forca </title>
   <link rel="stylesheet" href="./src/style/index.css">
 </head>
 
@@ -29,8 +29,17 @@
             <img src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/close.png?raw=true" alt="fechar" width="20" height="20">
           </div>
         </div>
-
       </div>
+
+      <!-- isso aparece antes do game -->
+      <!-- <div class="cover-gamer">
+        <div class="messages-chat"> 
+          <span class="message" id="text1">Durante suas aventuras, nosso herói se encontra com a grande Esfinge. Para que sua jornada continue desvende os enígmas dela e conquiste sua passagem.
+              Você tem seis tentativas para acertar a palavra e derrotar a Esfinge!
+            </span>
+            <div class="comecar"><button id="btn_comecar" type="submit">Começar!</button></div>
+        </div>
+      </div>  -->
 
       <main class="container-game">
         <section class="section-game">
@@ -49,16 +58,12 @@
         <img id="ground" src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/ground.jpg?raw=true" alt="">
         </section>
         <aside class="section-chat">
-          <div class="messages-chat"> 
-            <span class="message" id="text1">Nosso heroi precisa continuar sua jornada mas antes deve passar pelo Guardião da passagem.
-                Você tem seis tentativas para acertar a palavra e derrotar a Esfinge!
-            </span>
-          </div>
+         
           
-          <div id="word-field">jacare - de - papo - amarelo</div>
+          <div id="word-field">______ - __ - ____ - _______</div>
 
             <div class="keyboard">
-                <!-- Primeira linha -->
+
                 <div class="key-row">
                     <button class="key">Q</button>
                     <button class="key">W</button>
@@ -71,8 +76,7 @@
                     <button class="key">O</button>
                     <button class="key">P</button>
                 </div>
-        
-                <!-- Segunda linha -->
+
                 <div class="key-row">
                     <button class="key">A</button>
                     <button class="key">S</button>
@@ -84,8 +88,7 @@
                     <button class="key">K</button>
                     <button class="key">L</button>
                 </div>
-        
-                <!-- Terceira linha -->
+ 
                 <div class="key-row">
                     <button class="key">Z</button>
                     <button class="key">X</button>
@@ -95,23 +98,23 @@
                     <button class="key">N</button>
                     <button class="key">M</button>
                 </div>
-                
-                <!-- Espaço e Enter -->
+              
                 <div class="key-row">
-                  <button class="key space">Chutar Palavra</button>
+                   <button class="key space">Chutar Palavra</button> <!--AJUSTAR LARGURA -->
                   <button class="key enter">Reiniciar</button>
                 </div>
             </div>
 
-            
-
-          <!-- <div class="text-chat">
+          <!-- <div class="chute-palavra">   ISSO AQUI TEM DE APARECER QUANDO A PESSOA CLICAR EM "CHUTAR PALAVRA"
             <input type="text" id="inp_text" placeholder="Digite aqui...">
-            <button id="text-send" type="submit" onclick="chat()" disabled><img src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/moreThan.png?raw=true" alt=""></button>
-          </div> -->
+            <button id="text-send" onclick="chat()" disabled><img src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/moreThan.png?raw=true" alt=""></button>
+          </div>  -->
         </aside>
+
+        <p class="score"><span class="wins">Vitórias: 0</span> | <span class="defeats">Derrotas: 0</span></p>
       </main>
-      <div class="comecar"><button id="btn_comecar" type="submit">Começar!</button></div>
+
+      
     </div>
   </section>
 
