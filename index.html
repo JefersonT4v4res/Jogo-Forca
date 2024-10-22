@@ -58,14 +58,14 @@
         <img id="ground" src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/ground.jpg?raw=true" alt="">
         </section>
         <aside class="game-control">
-          <p class="game-tip">TEMA: <span class="theme-tip">0</span></p>
+          <p class="game-tip">TEMA: <span class="theme-tip"></span></p>
           
-          <div id="word-field">______ - __ - ____ - _______</div>
+          <div class="word-field">______ - __ - ____ - _______</div>
 
             <div class="keyboard mainBoard">
 
                 <div class="key-row">
-                    <button class="key">Q</button>
+                    <button class="key" id="Q">Q</button>
                     <button class="key">W</button>
                     <button class="key">E</button>
                     <button class="key">R</button>
@@ -100,8 +100,8 @@
                 </div>
               
                 <div class="key-row">
-                   <button class="key guess">Chutar Palavra</button>
-                  <button class="key reload">Reiniciar</button>
+                   <button class="especial-key guess">Chutar Palavra</button>
+                  <button class="especial-key reload">Reiniciar</button>
                 </div>
             </div>
 
@@ -125,8 +125,8 @@
   </section>
 
  
-
-  <script type="text/javascript" src="./src/script/events.js"></script>
+  <script type="module" src="./src/script/game.js"></script>
+  <script type="module" src="./src/script/events.js"></script>
 </body>
 
 </html>
