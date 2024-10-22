@@ -37,11 +37,13 @@ const checkLetters = (letter, palavra) => {
 
     if (!found) {
         const lifeIcons = document.querySelectorAll(".iconLife"); // Seleciona todos os elementos com a classe 'iconLife'
-    if (lifeIcons.length > 0) {
+    if (lifeIcons.length > 1) {
         const lastLife = lifeIcons[lifeIcons.length - 1]; // Obtém o último item da lista
         lastLife.remove(); // Remove o último elemento de vida
     }else {
-        
+        const lastLife = lifeIcons[lifeIcons.length - 1]; // Obtém o último item da lista
+        lastLife.remove();
+        gameOverModal.style.display = "block";
     }
     }
 };
