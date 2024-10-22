@@ -42,13 +42,13 @@ body {
 
 .jFrame {
   min-width: 95vw;
-  max-height: 90vh;
+  min-height: 88vh;
   background-color: #000000;
   border: 0.12em solid #808080;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .barra-ferramentas {
@@ -102,6 +102,39 @@ div#minimizar:hover,
   background-color: #727171d3;
 }
 
+.cover-gamer {
+  width: 91rem;
+  height: 35rem;
+  background: #000;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.start-game {
+  width: 40rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.story-game {
+    color: #fff;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+#btn_comecar {
+  width: 10em;
+  height: 3em;
+  background: #ffffff;
+  font-size: 1em;
+  font-weight: 600;
+}
+
 .container-game {
     box-sizing: border-box;
     min-width: 95vw;
@@ -123,8 +156,6 @@ div#minimizar:hover,
   align-items: center;
   justify-content: flex-end;
 }
-
-
 
 .vidas {
     position: relative;
@@ -191,7 +222,7 @@ div#minimizar:hover,
   height: 3rem;
 }
 
-.section-chat {
+.game-control {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -202,15 +233,11 @@ div#minimizar:hover,
     padding: 5px;
 }
 
-.messages-chat {
-    width: 100%;
-    height: 4rem;
-}
-
-.message {
-    margin-bottom: 10rem;
-    color: #fff;
-    font-size: 1rem;
+.game-tip {
+  margin: 1rem 2rem;
+  text-align: left;
+  color: #fff;
+  font-size: 1rem;
 }
 
 #word-field {
@@ -221,7 +248,7 @@ div#minimizar:hover,
 
 .keyboard {
     background-color: #222;
-    padding: 10px;
+    padding: 5px;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
 }
 
@@ -236,9 +263,9 @@ div#minimizar:hover,
     color: #fff;
     border: none;
     border-radius: 5px;
-    padding: 15px;
     margin: 5px;
-    width: 50px;
+    width: 40px;
+    height: 34px;
     text-align: center;
     font-size: 1rem;
     cursor: pointer;
@@ -249,71 +276,37 @@ div#minimizar:hover,
     background-color: #555;
 }
 
-/* textarea {
-  background-color: #14131b;
-  border: 0;
-  width: 100%;
-  height: 100px;
-  resize: none;
-} */
+.key.space {
+  width: 12em;
+}
 
+.key.enter {
+  width: 7rem;
+}
 
-
-
-
-/* .text-chat {
-  background-color: #fcfcfc;
-  width: 100%;
-  height: 20%;
-  display: flex;
+.guess-word {
+  height: 5rem;
+  display: none;
   align-items: center;
+  justify-content: center;
 }
 
-#text-send {
-  background-color: transparent;
-  border: 0;
-  width: 20%;
-  height: 100%;
-  background-color: #b32e29;
+.inp_text {
+  width: 20rem;
+  height: 1.77rem;
+}
+
+.btn-layout {
   cursor: pointer;
+  width: 4rem;
+  height: 2rem;
 }
 
-input#inp_text {
-  border-left: 0;
-  border-top: 0;
-  border-bottom: 0;
-  border-right: 1px solid #000000;
-  text-align: center;
-  font-size: 1.5em;
-  width: 80%;
-  height: 100%;
-  color: #000000;
-} */
-
-/* input:focus {
-  outline: none;
-} */
-
-/* input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-}
-input[type="number"] {
-  -moz-appearance: textfield;
-  appearance: textfield;
-} */
-
-.comecar {
-  width: 100%;
-  height: auto;
-  display: block;
-  margin-left: 65%;
-  margin-bottom: 1em;
+.keyboard-imgs {
+  height: 1rem;
 }
 
-#btn_comecar {
-  width: 10em;
-  height: 3em;
-  background: #ffffff;
-  font-size: 1em;
-  font-weight: 600;
+.score {
+  color: #fff;
+  margin-top: 20px;
 }
