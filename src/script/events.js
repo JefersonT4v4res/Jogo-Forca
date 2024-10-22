@@ -13,6 +13,8 @@ document.querySelector(".text-send").addEventListener("click", () => {
     document.querySelector(".inp_text").disabled = true;
 });
 
-document.querySelector(".reload").addEventListener("click", () => {
-    location.reload();
+document.querySelectorAll(".reload").forEach((element) => {
+    element.addEventListener("click", () => {
+        location.reload();
+    });
 });
