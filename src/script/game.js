@@ -60,7 +60,10 @@ const ilose = () => {
     const heroElement = document.querySelector("#hero");
     heroElement.src = "../src/images/nahamDamage.png"; 
     heroElement.classList.add('disappear');
-
+    
+    document.querySelectorAll(".key").forEach(key => {
+        key.style.pointerEvents = "none"; 
+    });
     setTimeout(() => {
         incrementLosses(); 
         gameOverModal.style.display = "block"; 
