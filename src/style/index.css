@@ -250,9 +250,9 @@ div#minimizar:hover,
   font-size: 1rem;
 }
 
-#word-field {
+.word-field {
     color: #fff;
-    font-size: 3rem;
+    font-size: 2rem;
     text-align: center;
 }
 
@@ -268,7 +268,7 @@ div#minimizar:hover,
     margin-bottom: 5px;
 }
 
-.key {
+.key, .especial-key {
     background-color: #333;
     color: #fff;
     border: none;
@@ -286,12 +286,18 @@ div#minimizar:hover,
     background-color: #555;
 }
 
-.key.guess {
+.guess {
   width: 12em;
 }
 
-.key.reload {
+.reload {
   width: 7rem;
+}
+
+.key.clicked {
+  background-color: gray; 
+  pointer-events: none;   
+  opacity: 0.5;
 }
 
 .guess-word {
