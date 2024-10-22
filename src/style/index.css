@@ -20,6 +20,15 @@ li {
   list-style: none;
 }
 
+button, input {
+  border: none;
+}
+
+input:focus {
+  outline: none; 
+  border: none;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -277,11 +286,11 @@ div#minimizar:hover,
     background-color: #555;
 }
 
-.key.space {
+.key.guess {
   width: 12em;
 }
 
-.key.enter {
+.key.reload {
   width: 7rem;
 }
 
@@ -294,13 +303,20 @@ div#minimizar:hover,
 
 .inp_text {
   width: 20rem;
-  height: 1.77rem;
+  height: 1.97rem;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+.inp_text::placeholder {
+  padding: 5px;
 }
 
 .btn-layout {
   cursor: pointer;
   width: 4rem;
   height: 2rem;
+  background-color: #ada4a4;
 }
 
 .keyboard-imgs {
