@@ -106,7 +106,7 @@ div#minimizar:hover,
   width: 91rem;
   height: 35rem;
   background: #000;
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -140,7 +140,7 @@ div#minimizar:hover,
     min-width: 95vw;
     height: 34rem;
     padding: 1rem;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: space-between;
 }
