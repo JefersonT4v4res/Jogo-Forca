@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Jogo da Forca </title>
+  <link rel="preload" href="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/bgInicial.jpg?raw=true" as="image">
   <link rel="stylesheet" href="./src/style/index.css">
 </head>
 
@@ -61,7 +62,7 @@
           
           <div id="word-field">______ - __ - ____ - _______</div>
 
-            <div class="keyboard">
+            <div class="keyboard mainBoard">
 
                 <div class="key-row">
                     <button class="key">Q</button>
@@ -99,18 +100,18 @@
                 </div>
               
                 <div class="key-row">
-                   <button class="key space">Chutar Palavra</button>
-                  <button class="key enter">Reiniciar</button>
+                   <button class="key guess">Chutar Palavra</button>
+                  <button class="key reload">Reiniciar</button>
                 </div>
             </div>
 
           <div class="keyboard guess-word"> 
-            <button type="submit" class="btn-layout decline" disabled="">
+            <button class="btn-layout decline">
               <img class="keyboard-imgs" src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/close.png?raw=true" alt="fechar">
             </button>
             
             <input type="text" class="inp_text" placeholder="Digite aqui...">
-            <button type="submit" class="btn-layout text-send" disabled="">
+            <button class="btn-layout text-send" >
               <img class="keyboard-imgs" src="https://github.com/JefersonT4v4res/ImersaoDev_Alura/blob/main/_imgs/moreThan.png?raw=true" alt="enviar">
             </button>
           </div>
@@ -125,7 +126,7 @@
 
  
 
-  <!-- <script type="text/javascript" src="./script.js"></script> -->
+  <script type="text/javascript" src="./src/script/events.js"></script>
 </body>
 
 </html>
